@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aggie Dream Design</title>
+    
+    <!-- 🚀 Updated Styles -->
+    <link rel="stylesheet" href="/static/styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 🔹 Header Section -->
+    <header>
+        <h1>Aggie Dream Design</h1>
+    </header>
+
+    <!-- 🔹 NCAT Image Section -->
+    <section class="ncat-section">
+        <img src="/static/images/130-1303880_ncat-north-carolina-a-t-mascot.png" alt="North Carolina A&T" class="ncat-img">
+    </section>
+
+    <!-- 🔹 About Section -->
+    <section class="about">
+        <h2>About My App</h2>
+        <p>This app is designed to provide inspiration for the exterior designs of luxury homes. It can accommodate features such as glass windows, specific house colors, and other niche requests. This app will be useful for architects, exterior designers, and individuals looking to purchase a luxury home.
+            This app can generate images using Stable Diffusion's language model by connecting with it via the Replicate API. The model will generate an image based on the user's description of their dream design. The user can then view the generated image and decide if it aligns with their vision.</p>
+            </p>
+    </section>
+
+    <!-- 🔹 Home Generator Section -->
+    <section class="home-generator">
+        <h2>Generate Your Dream Design </h2>
+        <form id="dreamHomeForm">
+            <label for="description">Describe Your Dream Design:</label>
+            <textarea id="description" rows="4" placeholder="Enter a detailed description..." required></textarea>
+            <button type="submit">Generate</button>
+        </form>
+        <div id="output">
+            <h2>Generated Home</h2>
+            <img id="generatedImage" src="" alt="Generated Home">
+        </div>
+    </section>
+
+    <!-- 🔹 Contact Section -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <ul>
+            <!-- 🔹 Fix: Use a Direct Link Instead of JavaScript -->
+<li><a href="https://linkedin.com/in/maxwell-jackson-511a39176/" target="_blank">LinkedIn</a></li>
+<li><a href="https://github.com/FootballManagerFan" target="_blank">GitHub</a></li>
+            <li><a href="mailto:maxpjax@gmail.com">Gmail</a></li>
+            <li>Name: Maxwell Jackson</li>
+        </ul>
+    </section>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
