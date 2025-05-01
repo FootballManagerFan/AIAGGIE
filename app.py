@@ -4,12 +4,12 @@ import time
 
 app = Flask(__name__)
 
-# 🚀 Force Flask to Reload Templates and Disable Caching
+#  Force Flask to Reload Templates and Disable Caching
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 # Hardcoded Replicate API key
-REPLICATE_API_TOKEN = "r8_X1gcU2tWEbjYVNo7LVElyYls7bvXVFx2Bw1Ki"
+REPLICATE_API_TOKEN = 
 
 @app.route('/')
 def index():
@@ -26,7 +26,7 @@ def generate_home():
     prompt = data['description']
     
     try:
-        # 🚀 Run Stable Diffusion on Replicate
+        #  Run Stable Diffusion on Replicate
         output = replicate.run(
             "stability-ai/stable-diffusion:ac732df83cea7fff18b8472768c88ad041fa750ff7682a21affe81863cbe77e4",
             input={
@@ -40,7 +40,7 @@ def generate_home():
             }
         )
 
-        # 🚀 Extract the image URL correctly
+        #  Extract the image URL correctly
         if isinstance(output, list) and len(output) > 0:
             image_url = str(output[0])  # Convert FileOutput to string URL
             return jsonify({"generated_image": image_url})
